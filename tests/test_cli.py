@@ -102,6 +102,7 @@ def test_remove_stopwords(runner):
     args += ["--stop-word", "the", "--stop-word", "and"]
     assert run(runner, args) == "cat dog"
 
+
 def test_shuffle_with_seed_is_reproducible(runner):
     args = ["struct", "shuffle", "a", "b", "c", "d", "--seed", "42"]
     assert run(runner, args) == run(runner, args)

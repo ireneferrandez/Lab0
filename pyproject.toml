@@ -1,7 +1,7 @@
 [project]
 name = "lab0"
 version = "0.1.0"
-description = "Add your description here"
+description = "Data pre-processing project with a CLI, linting and testing"
 readme = "README.md"
 authors = [
     { name = "ireneferrandez", email = "irene.ferrandez.10@gmail.com" }
@@ -14,10 +14,3 @@ dependencies = [
     "pytest>=9.2.0",
     "pytest-cov>=7.1.0",
 ]
-
-[project.scripts]
-lab0 = "lab0:main"
-
-[build-system]
-requires = ["uv_build>=0.12.15,<0.13.0"]
-build-backend = "uv_build"
